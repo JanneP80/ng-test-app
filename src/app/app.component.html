@@ -1,3 +1,12 @@
-<h1>
-  {{title}}
-</h1>
+<div *ngFor="let contact of contacts">
+  {{contact.firstName + ' ' + contact.lastName}}
+  
+</div>
+
+
+<button md-raised-button (click)="doSomething()">Click Me</button>
+
+<p>
+  {{helloText}}
+</p>
+
