@@ -5,10 +5,12 @@ import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
+import { ContactListComponent } from './contact/contact-list/contact-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ContactListComponent
   ],
   imports: [
     BrowserModule,
