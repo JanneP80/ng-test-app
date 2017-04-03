@@ -1,8 +1,10 @@
+<!--
 <div *ngFor="let contact of contacts">
   {{contact.firstName + ' ' + contact.lastName}}
-  
-</div>
 
+</div>
+-->
+<app-contact-list [contacts]="contacts"></app-contact-list>
 
 <button md-raised-button (click)="doSomething()">Click Me</button>
 
