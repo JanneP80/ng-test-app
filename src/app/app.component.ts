@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {Contact} from "./contact/contact";
+import {ContactService} from "./contact/services/contact.service";
 
 @Component({
   selector: 'app-root',
@@ -8,16 +9,14 @@ import {Contact} from "./contact/contact";
 })
 export class AppComponent {
 
-  contacts: [Contact];
+  contacts: Contact[];
   helloText: string;
+  hello2Text: string;
   selectedContact: Contact;
 
-  constructor(){
-  this.contacts = [
-    new Contact(0, 'Vesa', 'Heimo'),
-    new Contact(1, 'Mörkö', 'Pötkö'),
-    new Contact(2, 'Aatu', 'Beetu')
-    ]
+  constructor(contactService: ContactService){
+    this.contacts = contactService.findContacts();
+
   }
 
   doSomething(){

@@ -6,6 +6,7 @@ import { MaterialModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { ContactListComponent } from './contact/contact-list/contact-list.component';
+import {ContactService} from "./contact/services/contact.service";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { ContactListComponent } from './contact/contact-list/contact-list.compon
     HttpModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
