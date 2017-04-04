@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NgTestApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
@@ -26,3 +27,6 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+# ng-test-app
+>>>>>>> 5202538a49ba934fe85095fc0a41fc79cf381b00
