@@ -10,6 +10,7 @@ export class AppComponent {
 
   contacts: [Contact];
   helloText: string;
+  selectedContact: Contact;
 
   constructor(){
   this.contacts = [
@@ -20,11 +21,13 @@ export class AppComponent {
   }
 
   doSomething(){
-    console.log('Hello');
+    console.log('Hello Button');
     this.helloText = 'Hi!';
-
   }
 
+  contactSelected(contact: Contact){
+    this.selectedContact = contact;
 
+  }
 
 }

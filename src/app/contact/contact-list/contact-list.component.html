@@ -1,10 +1,7 @@
 
-<div *ngFor="let contact of contacts">
+<div *ngFor="let contact of contacts" (click)="contactSelected(contact)">
   {{contact.firstName + ' ' + contact.lastName}}
 
 </div>
 
-<!--<p>-->
-  <!--contact-list works!-->
 
-<!--</p>-->
